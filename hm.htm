@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<head><title>test</title>
+</head>
+<body style="font-family:monospace,monospace;"><center>
+
+<p>A Browser Version of Notepad.<br>v1</p><p id="time"></p>
+<hr>
+
+<textarea id="tux"
+style="border-radius:1rem; border:2px solid #aae; width:100%; height:60vh; margin:-5px;" placeholder="start typing!"
+onkeyup="this.nextElementSibling.textContent = this.value.length + ' characters';"></textarea>
+
+<p>0 characters</p>
+<input type="number" onkeyup="document.getElementById('tux').setAttribute('maxlength', this.value);" />
+
+<table style="text-align:center;"><tr><th>fileName</th><th>fileType</th></tr>
+<tr><td><input id="name" /></td><td><input id="fileType" value=".txt" /></td><td><button onclick="actio();">Save File to Device</button></td></tr></table>
+<p style="font-size:8pt;">made by <a href="mailto:niassu@protonmail.com" style="color:inherit; text-decoration:inherit;">niasssu</a>, 2024.</p>
+
+
+</center>
+<script src="./java.js"></script>
+</body>
