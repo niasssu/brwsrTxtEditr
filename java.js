@@ -13,18 +13,8 @@ function download(filename, txt) {
 	document.body.removeChild(fil);
 }
 
-function sound(audia, tip) {
-	var snd = document.createElement('audio');
-	snd.setAttribute('src', audia);
-	snd.setAttribute('type', 'audio/' + tip);
-	snd.style,display = 'none';
-	document.body.appendChild(snd);
-	snd.play();
-}
-
 function actio() {
 download(name.value + '_' + fileNumber + fltp.value, txtBody.value);
-sound('./hypergem_creation.ogg', 'ogg');
 }
 
 
