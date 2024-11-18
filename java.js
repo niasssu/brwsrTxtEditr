@@ -14,7 +14,7 @@ function download(filename, txt) {
 }
 
 function actio() {
-download(name.value + '_' + fileNumber + fltp.value, txtBody.value);
+download(name.value + fltp.value, txtBody.value);
 }
 
 
@@ -34,7 +34,7 @@ let wkdy = ['Sun', 'Mon', 'Tues', 'Wednes', 'Thurs', 'Fri', 'Satur'];
 let st = new Date(now.getFullYear(),0,0);
 let dayLength = 24*3600000;
 let fileNumber = now - st;
-let logTime = Math.floor((now - st)/dayLength);
+let logTime = Math.floor(fileNumber/dayLength);
 console.log(fileNumber);
 
 document.getElementById('time').innerHTML = `${wkdy[dy]}day, ${dt} ${ymt[mt]} ${yr}<br>${yr}.${logTime}`;
